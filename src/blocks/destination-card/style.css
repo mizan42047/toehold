@@ -1,0 +1,195 @@
+.wp-block-toehold-destination-card .toehold-card-wrapper {
+  height: auto;
+  text-align: center;
+  border: 1px solid #E8EBF1;
+  background: #fff;
+}
+.wp-block-toehold-destination-card .toehold-card-image-wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  min-height: 280px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wp-block-toehold-destination-card .toehold-card-image-wrapper:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+  height: 50%;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5));
+}
+.wp-block-toehold-destination-card .card-destination-name {
+  color: #FFF;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .card-destination-region {
+  color: #FFF;
+  opacity: 0.8;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .card-destination-description {
+  color: #FFF;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 390px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 61px;
+}
+.wp-block-toehold-destination-card .card-destination-page-link-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 14px 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border: 2px solid #FFF;
+  background: rgba(0, 0, 0, 0.7019607843);
+  color: #FFF;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.wp-block-toehold-destination-card .card-destination-page-link-btn:hover, .wp-block-toehold-destination-card .card-destination-page-link-btn:focus, .wp-block-toehold-destination-card .card-destination-page-link-btn:active {
+  color: #FFF;
+}
+.wp-block-toehold-destination-card .destination-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #E8EBF1;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left {
+  text-align: left;
+  padding: 12px;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-name {
+  color: #000;
+  font-family: "Figtree", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-type {
+  color: #9AA0AE;
+  font-family: "Figtree", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2px 0 10px;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-price {
+  gap: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-price .card-tour-price-label {
+  color: #9AA0AE;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-price .card-tour-offer-price-value {
+  color: #4DA1FF;
+  font-weight: 700;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-price .card-tour-original-price-value {
+  color: #BFC3CE;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-left .card-tour-price .card-tour-original-price-value.has-offer-price {
+  text-decoration: line-through;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-right {
+  text-align: right;
+  padding: 12px;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-dates {
+  color: #000;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-duration {
+  color: #9AA0AE;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 2px 0 8px;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-page-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #FFF;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+  background: #2D8EFF;
+  text-transform: uppercase;
+}
+.wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-page-link:hover, .wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-page-link:focus, .wp-block-toehold-destination-card .destination-card .card-content-right .card-tour-page-link:active {
+  color: #FFF;
+}
+.wp-block-toehold-destination-card .card-footer {
+  padding: 10px;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-destination-card .card-footer .card-footer-page-link {
+  font-family: inherit;
+  color: #4DA1FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

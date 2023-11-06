@@ -9,32 +9,44 @@
     }
 
     .toehold-card-image-wrapper {
-        background-size: cover;
+        z-index: 1;
         width: 100%;
         height: 100%;
-        min-height: 280px;
-        background-position: center;
         padding: 16px;
+        min-height: 280px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:before {
+            top: 0;
+            left: 0;
+            right: 0;
+            content: '';
+            z-index: -1;
+            height: 50%;
+            position: absolute;
+            background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.50));
+        }
     }
 
     .card-destination-name {
         color: #FFF;
+        line-height: 1;
+        font-size: 24px;
+        font-weight: 600;
         text-align: center;
         font-family: "Figtree", sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
     }
 
     .card-destination-region {
         color: #FFF;
+        opacity: 0.8;
+        line-height: 1;
+        font-size: 18px;
+        font-weight: 500;
         text-align: center;
         font-family: "Figtree", sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
     }
 
     .card-destination-description {
@@ -53,7 +65,7 @@
 
     .card-destination-page-link-btn {
         display: inline-flex;
-        padding: 16px 24px;
+        padding: 14px 24px;
         justify-content: center;
         align-items: center;
         gap: 8px;
@@ -97,18 +109,20 @@
             .card-tour-type {
                 color: #9AA0AE;
                 font-family: "Figtree", sans-serif;
+                line-height: 1;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 500;
-                line-height: normal;
+                margin: 2px 0 10px;
             }
 
             .card-tour-price {
-                font-family: "Figtree", sans-serif;
+                gap: 4px;
+                display: flex;
+                line-height: 1;
                 font-size: 14px;
-                font-style: normal;
                 font-weight: 500;
-                line-height: normal;
+                align-items: flex-end;
+                font-family: "Figtree", sans-serif;
 
                 .card-tour-price-label {
                     color: #9AA0AE;
@@ -136,18 +150,18 @@
 
             .card-tour-dates {
                 color: #000;
+                line-height: 1;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 500;
-                line-height: normal;
+                font-family: "Figtree", sans-serif;
             }
 
             .card-tour-duration {
                 color: #9AA0AE;
+                line-height: 1;
                 font-size: 14px;
-                font-style: normal;
                 font-weight: 600;
-                line-height: normal;
+                margin: 2px 0 8px;
             }
 
             .card-tour-page-link {
@@ -156,14 +170,13 @@
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+                color: #FFF;
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 700;
                 border-radius: 3px;
                 background: #2D8EFF;
-                color: #FFF;
-                font-family: inherit;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                text-transform: uppercase;
 
                 &:hover,
                 &:focus,

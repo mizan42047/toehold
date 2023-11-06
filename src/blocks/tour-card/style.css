@@ -1,0 +1,185 @@
+.wp-block-toehold-tour-card > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wp-block-toehold-tour-card .toehold-card-wrapper {
+  height: auto;
+  text-align: center;
+  border: 1px solid #E8EBF1;
+  background: #fff;
+}
+.wp-block-toehold-tour-card .toehold-card-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.wp-block-toehold-tour-card .toehold-card-image-wrapper:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(79.17%, rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 79.17%);
+}
+.wp-block-toehold-tour-card .toehold-card-image-wrapper .toehold-card-image {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+.wp-block-toehold-tour-card .toehold-card-image-ribbon {
+  position: absolute;
+  top: 30px;
+  right: -48px;
+  background-color: #ff6f61;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+  width: 181px;
+  height: 24PX;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.wp-block-toehold-tour-card .toehold-card-image-ribbon span {
+  vertical-align: middle;
+}
+.wp-block-toehold-tour-card .toehold-card-content {
+  padding: 16px;
+  text-align: center;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-name {
+  z-index: 2;
+  color: #fff;
+  width: 100%;
+  bottom: 10px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  font-family: "Figtree", sans-serif;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.wp-block-toehold-tour-card.tour-card-new-ribbon .toehold-card-image-ribbon {
+  background-color: #3773FE;
+}
+.wp-block-toehold-tour-card.tour-card-full-ribbon {
+  opacity: 0.6;
+}
+.wp-block-toehold-tour-card.tour-card-full-ribbon .toehold-card-image-ribbon {
+  background-color: #9AA0AE;
+}
+.wp-block-toehold-tour-card.tour-card-open-ribbon .toehold-card-image-ribbon {
+  background-color: #90C271;
+}
+.wp-block-toehold-tour-card.tour-card-filling-fast-ribbon .toehold-card-image-ribbon {
+  background-color: #E36767;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-location-name {
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-location-region {
+  color: #9AA0AE;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-type {
+  color: #9AA0AE;
+  line-height: 1;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-date {
+  color: #000000;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-duration {
+  color: #9AA0AE;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-price {
+  gap: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-price .toehold-card-tour-price-label {
+  color: #9AA0AE;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-price .toehold-card-tour-price-offer {
+  color: #4DA1FF;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 700;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-price .toehold-card-tour-price-original {
+  color: #BFC3CE;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Figtree", sans-serif;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-price .toehold-card-tour-price-original.has-offer-price {
+  text-decoration: line-through;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-btn {
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #000000;
+}
+.wp-block-toehold-tour-card .toehold-card-tour-btn:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
